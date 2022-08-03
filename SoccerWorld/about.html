@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="sport" content="sport store, sport clothes">
+    <title>Sports store</title>
+    <link rel="stylesheet" href="css/store.css">
+</head>
+
+<body>
+    <div id="container">
+
+        <div id="navbar1">
+            <!-- login Button -->
+            <ul>
+                <li id="login"><a href="#login.html">Login</a></li>
+                <li id="cart"><a href="#cart.html">Cart</a></li>
+            </ul>
+
+            <!--search bar is Christopher's code-->
+            <div class="search-container">
+                <form action="/action_page.php">
+                    <input type="text" placeholder="Search.." name="search">
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- second nav bar -->
+        <div id="navbar2">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="clothing.php">Clothing</a></li>
+                <li><a href="footwear.html">Footwear</a></li>
+                <li><a href="equipment.html">Equipment</a></li>
+                <li><a href="fanclothing.html">Fans Clothing</a></li>
+                <li><a href="onsale.html" style="color: red">On Sale</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </div>
+
+        <!-- different icons to change color-->
+        <!-- totorial in this website:
+		https://webdesign.tutsplus.com/tutorials/color-schemes-with-css-variables-and-javascript--cms-36989-->
+
+        <select name="theme-select" id="theme-select">
+			<option value="light">Light</option>
+			<option value="dark">Dark</option>
+			<option value="blue">Blue</option>
+		</select>
+        <!--end of upper template-->
+
+
+        <!--image on the screen-->
+        <!--License of the image: Free for commercial use, No attribution required-->
+        <div id="image">
+            <img src="https://cdn.pixabay.com/photo/2018/09/30/22/12/silhouette-3714836_1280.png" alt="football player png">
+        </div>
+
+        <!-- name of the website/store -->
+        <div id="content">
+            <h2>About</h2>
+        </div>
+
+        <!-- 2 lines undereath the soccer world text -->
+        <div id="line1"></div>
+        <div id="line2"></div>
+
+        <section class="main-container">
+
+            <div class="main-row">
+                <hr/>
+                <!--License of the images: Free for commercial use, No attribution required-->
+
+                <div class="column">
+                    <a href="#about.html"> <img class="resize" src="https://cdn.pixabay.com/photo/2016/03/11/08/02/usa-1249880_1280.jpg" alt="About" /></a>
+                    <h3><a href="#about.html">About Us</a></h3>
+                    <p>Learn more about us and our business</p>
+                </div>
+
+                <br/><br/>
+
+
+
+                <div class="main-row">
+                    <h1>To Contact Us </h1>
+
+                    <section id="leftColumn">
+                        <ul>
+                            <b>soccer Store<b></br>
+				abc@uwindsor.ca</br>
+				519-000-0000</br>
+				Windsor, Ontario</br>
+			</ul>
+			<br>
+			<a href="mailto:abc@uwindsor.ca"><button style="background:rgb(255, 204, 242); padding:2px;" >Email Us</button></a>
+		
+		</section>
+	</div>
+		
+		
+
+	<section>
+	
+	<!--start of footer section-->
+
+	<hr class="solid">
+
+	<footer class="footer">
+		<div class="footer-column">
+		<ul>
+				<b>ABOUT US</b>
+                            <li>
+                                <a href="#about.html">News</a>
+                            </li>
+
+                            <li>
+                                <a href="#about.html">Send us Feedback</a>
+                            </li>
+
+                            <li>
+                                <a href="#about.html">Contact us</a>
+                            </li>
+                        </ul>
+                </div>
+
+                <div class="footer-column">
+                    <ul>
+                        <b>Collection</b>
+                        <li>
+                            <a href="#clothing.html">Clothing</a>
+                        </li>
+
+                        <li>
+                            <a href="#footwear.html">Footwear</a>
+                        </li>
+
+                        <li>
+                            <a href="#equipment.html">Equipment</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <ul>
+                        <b>Deals</b>
+                        <li>
+                            <a href="#onsale.html">Clearance / On sale products</a>
+                        </li>
+
+                        <li>
+                            <a href="#fanwear.html">Shop based on your fav team</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <ul>
+                        <b>Locations</b>
+
+                        <li>
+                            <a href="https://goo.gl/maps/LvZYW29Pmsb3J4ZK7">Toronto</a>
+                        </li>
+
+                        <li>
+                            <a href="https://goo.gl/maps/jXwPUAVy5WXvpLr16">Windsor</a>
+                        </li>
+
+                        <li>
+                            <a href="https://goo.gl/maps/RTcxXJb7J6wja3Un9">London</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <br/>
+                <hr class="solid">
+
+                <br/>
+                <div class="copyright">Copyright</div><br/>
+            </div>
+    </div>
+    <!--javascript to make the dropdown work-->
+    <script>
+        const setTheme = theme => document.documentElement.className = theme;
+        document.getElementById('theme-select').addEventListener('change', function() {
+            setTheme(this.value);
+        });
+    </script>
+
+</body>
+
+</html>

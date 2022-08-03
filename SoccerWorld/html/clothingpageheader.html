@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="sport" content="sport store, sport clothes">
+    <title>Sports store</title>
+    <link rel="stylesheet" href="css/store.css">
+</head>
+
+<body>
+    <div id="container">
+
+        <div id="navbar1">
+            <!-- login Button -->
+            <ul>
+                <li id="login"><a href="#login.html">Login</a></li>
+                <li id="cart"><a href="#cart.html">Cart</a></li>
+            </ul>
+
+            <!--search bar is Christopher's code-->
+            <div class="search-container">
+                <form action="/action_page.php">
+                    <input type="text" placeholder="Search.." name="search">
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- second nav bar -->
+        <div id="navbar2">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="clothing.html">Clothing</a></li>
+                <li><a href="footwear.html">Footwear</a></li>
+                <li><a href="equipment.html">Equipment</a></li>
+                <li><a href="fanclothing.html">Fans Clothing</a></li>
+                <li><a href="onsale.html" style="color: red">On Sale</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </div>
+
+        <!-- different icons to change color-->
+        <!-- totorial in this website:
+		https://webdesign.tutsplus.com/tutorials/color-schemes-with-css-variables-and-javascript--cms-36989-->
+
+        <select name="theme-select" id="theme-select">
+			<option value="light">Light</option>
+			<option value="dark">Dark</option>
+			<option value="blue">Blue</option>
+		</select>
+
+
+
+        <!--image on the screen-->
+        <!--License of the image: Free for commercial use, No attribution required-->
+        <div id="image">
+            <img src="https://cdn.pixabay.com/photo/2018/09/30/22/12/silhouette-3714836_1280.png" alt="football player png">
+        </div>
+
+        <!-- name of the website/store -->
+        <div id="content">
+            <h2>Clothing</h2>
+        </div>
+
+        <!-- 2 lines undereath the soccer world text -->
+        <div id="line1"></div>
+        <div id="line2"></div>
+
+        <!--end of upper template-->
