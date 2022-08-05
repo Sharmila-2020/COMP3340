@@ -68,3 +68,12 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+####################################################################
+
+The components/WebPages folder contains all of the main webpages for the app. To edit a webpage, edit the html content inside the return function of each webpage.
+For example, if you'd like to edit the equipment webpage, open Equipment.js, and edit the HTMl code insdie the function Equipment().
+
+The file Template.js in components/WebPages/file is the main website template. Editing html code in there will edit it across the entire website.
+
+
