@@ -1,0 +1,31 @@
+
+.valid {
+    color: green;
+}
+
+.invalid {
+    color: red;
+}
+
+.hide {
+    display: none;
+}
+
+.instructions {
+    background-color: red;
+}
+
+.offscreen {
+    display: none;
+}
+
+.line {
+    text-decoration: underline;
+}
+
+.reg-main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5%;
+}

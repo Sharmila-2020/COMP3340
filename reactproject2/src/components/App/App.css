@@ -1,0 +1,384 @@
+.wrapper {
+    padding: 20px;
+    margin-top: 15%;
+    margin-bottom: 20%;
+    margin-right: 40%;
+    margin-left: 40%;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: black;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    /*font-family: serif, sans-serif;*/
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+#container {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    /*these 3 css element are in header,main body,footer to change color*/
+    background-color: var(--bg-color);
+    background-image: var(--bg-url);
+    color: var(--text-color);
+}
+
+
+/*root variables for the different color themes*/
+
+:root,
+:root.light {
+    --bg-color: #fff;
+    --text-color: #123;
+}
+
+    :root.dark {
+        --bg-color: #121212;
+        --text-color: #696d7d;
+    }
+
+    :root.blue {
+        --bg-color: #05396B;
+        --text-color: white;
+    }
+
+
+/*color box codes*/
+
+select {
+    padding: 0.50rem 0.75rem;
+    font-size: 1.25rem;
+    font-family: inherit;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    border-radius: 0.50rem;
+    position: relative;
+    left: 20%;
+}
+
+
+/*navbar1*/
+
+
+/*search bar Christopher's code*/
+
+.search-container {
+    float: left;
+    margin-left: 10px;
+    margin-top: 15px;
+}
+
+    .search-container input[type=text] {
+        padding: 6px;
+        margin-top: 8px;
+        font-size: 17px;
+        border: none;
+    }
+
+    .search-container button {
+        float: right;
+        padding: 6px 10px;
+        margin-top: 8px;
+        margin-right: 16px;
+        background: #1c5da4;
+        font-size: 17px;
+        border: none;
+        cursor: pointer;
+    }
+
+        .search-container button:hover {
+            background: #ccc;
+        }
+
+
+/*end of Christopher's code*/
+
+
+/* login button */
+#navbar2 { 
+    background-color: grey;
+}
+
+#navbar1 ul #login {
+    height: 40px;
+    width: 120px;
+    margin-right: auto;
+    position: absolute;
+    top: 15%;
+    right: 7%;
+    display: grid;
+    place-items: center;
+    background: #165397;
+    border-radius: 20px 20px;
+}
+
+#navbar1 ul #register {
+    height: 40px;
+    width: 120px;
+    margin-right: auto;
+    position: absolute;
+    top: 15%;
+    right: 0.02%;
+    display: grid;
+    place-items: center;
+    background: #165397;
+    border-radius: 20px 20px;
+}
+
+#navbar1 ul #login a {
+    color: #e9e9eb;
+}
+
+#navbar1 ul #login:hover {
+    background: #000;
+}
+
+#navbar1 ul #register:hover {
+    background: #000;
+}
+
+/* cart button*/
+
+#navbar1 ul #cart {
+    height: 40px;
+    width: 120px;
+    position: absolute;
+    top: 15%;
+    right: 14%;
+    display: grid;
+    place-items: center;
+    background: #165397;
+    border-radius: 20px 20px;
+}
+
+    #navbar1 ul #cart a {
+        color: #e9e9eb;
+    }
+
+    #navbar1 ul #cart:hover {
+        background: #000;
+    }
+
+
+/* navbar2 */
+
+#navbar2 {
+    height: 60px;
+    width: 100%;
+    position: absolute;
+    top: 20%;
+    left: 0;
+    background: grey;
+    display: grid;
+    place-items: center;
+}
+
+    #navbar2 ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+    }
+
+#user-nav {
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+    margin: 0 25px;
+}
+
+#navbar2 ul li {
+    font-size: 20px;
+    margin: 0 25px;
+}
+
+    #navbar2 ul li::after {
+        width: 0;
+        content: '';
+        height: 2px;
+        background: black;
+        display: block;
+        margin: auto;
+        transition: 0.5s;
+    }
+
+    #navbar2 ul li:hover::after {
+        width: 100%;
+    }
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+#navbar2 ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+    #navbar2 ul li a:hover {
+        color: #165397;
+    }
+
+
+/* image */
+
+#image {
+    position: absolute;
+    top: calc(75% - 200px);
+    right: 2%;
+    z-index: 999;
+}
+
+    #image img {
+        height: 400px;
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        transition: 0.5s;
+    }
+
+
+/* soccer world text css codes */
+
+#content {
+    top: 40%;
+    left: 5%;
+    z-index: 996;
+}
+
+#website-title {
+    text-align: center;
+    font-size: 105px;
+    color: #165397;
+}
+
+#content:hover h2 {
+    color: #000;
+    transition: 0.5s;
+}
+
+
+/* lines underneath the soccer world text */
+
+#line1,
+#line2 {
+    height: 150px;
+    width: 60px;
+    background: #000;
+    position: absolute;
+    bottom: 0;
+    left: 20%;
+    transform: skewX(-45deg);
+}
+
+#line2 {
+    height: 60px;
+    left: 26%;
+}
+
+.main-container {
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin: 0;
+    background-color: var(--bg-color);
+    background-image: var(--bg-url);
+    color: var(--text-color);
+}
+
+.main-product-container {
+    padding-top: 150px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin: 0;
+    background-color: var(--bg-color);
+    background-image: var(--bg-url);
+    color: var(--text-color);
+}
+
+.column {
+    float: left;
+    width: 50%;
+    padding: 50px;
+}
+
+
+/* for each item listed on the product pages, makes it clickable */
+
+.column-product {
+    float: left;
+    width: 50%;
+    padding: 50px;
+    cursor: pointer;
+}
+
+
+/* Clear floats after the columns */
+
+.main-row {
+    content: "";
+    display: table;
+    clear: both;
+    justify-content:center;
+}
+
+.resize {
+    width: 500px;
+    height: 300px;
+}
+
+.slideshow-resize {
+    max-width: 1000px;
+    height: 300px;
+    position: relative;
+    margin: auto;
+}
+
+hr.solid {
+    border-top: 3px solid #bbb;
+}
+
+.footer {
+    background-color: var(--bg-color);
+    background-image: var(--bg-url);
+    color: var(--text-color);
+}
+
+    .footer li a {
+        color: #165397;
+    }
+
+    .footer:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+.footer-column {
+    float: left;
+    width: 25%;
+    padding: 50px;
+    height: auto;
+}
+
+.copyright {
+    text-align: center
+}
+
+#profile-title{
+   font-size: 50px;
+}
+#user{
+    padding-left:80%;
+    font-size: 28px;
+}
+#profile-main{
+    margin-bottom: 50%;
+}
